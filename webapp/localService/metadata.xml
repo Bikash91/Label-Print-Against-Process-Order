@@ -1,0 +1,23 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:sap="http://www.sap.com/Protocols/SAPData"
+	xmlns:ux="http://www.sap.com/Protocols/OData4SAP/UX" xmlns:gp="http://www.sap.com/Protocols/SAPData/GenericPlayer" Version="1.0">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZWMS_UPL_LABEL_PROCESS_ORDER_SRV" sap:schema-version="1"
+			xml:lang="en">
+			<EntityType Name="ProcessOrderLabel" m:HasStream="true" sap:content-version="1">
+				<Key><PropertyRef Name="Nooflabel"/><PropertyRef Name="Processorder"/></Key><Property Name="Message" Type="Edm.String" Nullable="true" MaxLength="255" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false" sap:label="Message"/><Property Name="Nooflabel" Type="Edm.String" Nullable="false" MaxLength="3" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false" sap:label="No Of Label"/><Property Name="Processorder" Type="Edm.String" Nullable="false" MaxLength="12" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false" sap:label="Order"/><Property Name="Itemnumber" Type="Edm.String" Nullable="true" MaxLength="6" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false" sap:label="Item"/><Property Name="Plant" Type="Edm.String" Nullable="true" MaxLength="4" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false" sap:label="Plant"/><Property Name="Batch" Type="Edm.String" Nullable="true" MaxLength="10" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false" sap:label="Batch"/><Property Name="Quantity" Type="Edm.Decimal" Nullable="true" Precision="13" Scale="3" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false" sap:label="Item quantity"/><Property Name="Material" Type="Edm.String" Nullable="true" MaxLength="18" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false" sap:label="Material Number"/><Property Name="Materialdescription" Type="Edm.String" Nullable="true" MaxLength="40" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false" sap:label="Description"/><Property Name="Unit" Type="Edm.String" Nullable="true" MaxLength="3" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false" sap:semantics="unit-of-measure" sap:label="Base Unit"/></EntityType>
+			<EntityContainer Name="ZWMS_UPL_LABEL_PROCESS_ORDER_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="ProcessOrderLabelSet" EntityType="ZWMS_UPL_LABEL_PROCESS_ORDER_SRV.ProcessOrderLabel" sap:content-version="1"
+				sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self"
+				href="https://gwaas-ae7888026.hana.ondemand.com:443/sap/opu/odata/sap/ZWMS_UPL_LABEL_PROCESS_ORDER_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version"
+				href="https://gwaas-ae7888026.hana.ondemand.com:443/sap/opu/odata/sap/ZWMS_UPL_LABEL_PROCESS_ORDER_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
